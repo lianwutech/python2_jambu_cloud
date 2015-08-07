@@ -10,7 +10,7 @@ RUN apt-get install -y unzip
 RUN mkdir -p /usr/src/sdk
 
 # install mns
-RUN curl -SL "https://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/cn/mns/0.0.2/assets/sdks/aliyun-mns-python-sdk-1.0.2.zip?spm=5176.730001.3.11.8iBKDU&Expires=1438916810&OSSAccessKeyId=80kJOHQaA4syuazx&Signature=rb069TgArRpyXd%2Fcrp8WuReb7t4%3D" -o aliyun-mns-python-sdk.zip
+RUN curl -SL "https://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/cn/mns/0.0.2/assets/sdks/aliyun-mns-python-sdk-1.0.2.zip" -o aliyun-mns-python-sdk.zip
 RUN unzip -o aliyun-mns-python-sdk.zip -d /usr/src/sdk
 RUN cd /usr/src/sdk/aliyun-mns-python-sdk*
 RUN python setup.sh install
