@@ -1,4 +1,4 @@
-FROM FROM merlinran/python2.7-pyv8-1.0-dev
+FROM merlinran/python2.7-pyv8-1.0-dev
 
 MAINTAINER daviddeng/python_jambu_cloud
 
