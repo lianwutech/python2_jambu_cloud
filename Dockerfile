@@ -12,17 +12,17 @@ WORKDIR /usr/src/sdk
 COPY . /usr/src/sdk
 
 # install mns
-RUN unzip -o /usr/src/sdk/mns-python-sdk*.zip -d /usr/src/sdk
-RUN rm /usr/src/sdk/mns-python-sdk*.zip
-RUN cd /usr/src/sdk/mns-python-sdk
+RUN unzip -o /usr/src/sdk/mns_python_sdk*.zip -d /usr/src/sdk
+RUN rm /usr/src/sdk/mns_python_sdk*.zip
+RUN cd /usr/src/sdk/mns_python_sdk
 RUN python setup.sh install
 
 # install ots
-RUN unzip -o /usr/src/sdk/ots-python-sdk*.zip -d /usr/src/sdk
-RUN rm /usr/src/sdk/ots-python-sdk*.zip
-RUN cd /usr/src/sdk/ots-python-sdk/pymodules
+RUN unzip -o /usr/src/sdk/ots_python_sdk*.zip -d /usr/src/sdk
+RUN rm /usr/src/sdk/ots_python_sdk*.zip
+RUN cd /usr/src/sdk/ots_python_sdk/pymodules
 RUN ./install_modules_for_ots_python_sdk.sh
-RUN cd /usr/src/sdk/ots-python-sdk
+RUN cd /usr/src/sdk/ots_python_sdk
 RUN python setup.sh install
 
 RUN rm -rf /usr/src/sdk
