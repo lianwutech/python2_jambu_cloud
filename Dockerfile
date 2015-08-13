@@ -13,11 +13,13 @@ COPY . /usr/src/sdk
 
 # install mns
 RUN unzip -o /usr/src/sdk/aliyun-mns-python-sdk*.zip -d /usr/src/sdk
+RUN rm /usr/src/sdk/aliyun-mns-python-sdk*.zip
 RUN cd /usr/src/sdk/aliyun-mns-python-sdk*
 RUN python setup.sh install
 
 # install ots
 RUN unzip -o /usr/src/sdk/ots_python_sdk*.zip -d /usr/src/sdk
+RUN rm /usr/src/sdk/ots_python_sdk*.zip
 RUN cd /usr/src/sdk/ots_python_sdk*
 RUN cd pymodules*
 RUN ./install_modules_for_ots_python_sdk.sh
