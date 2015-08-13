@@ -12,9 +12,9 @@ WORKDIR /usr/src/sdk
 COPY . /usr/src/sdk
 
 # install mns
-RUN unzip -o /usr/src/sdk/aliyun-mns-python-sdk*.zip -d /usr/src/sdk
-RUN rm /usr/src/sdk/aliyun-mns-python-sdk*.zip
-RUN cd /usr/src/sdk/aliyun-mns-python-sdk*
+RUN unzip -o /usr/src/sdk/mns-python-sdk*.zip -d /usr/src/sdk
+RUN rm /usr/src/sdk/mns-python-sdk*.zip
+RUN cd /usr/src/sdk/mns-python-sdk*
 RUN python setup.sh install
 
 # install ots
