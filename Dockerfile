@@ -1,6 +1,6 @@
-FROM merlinran/python2.7-pyv8-1.0-dev
+FROM linkworld/python2_pyv8
 
-MAINTAINER daviddeng/python_jambu_cloud
+MAINTAINER linkworld/python2_jambu_cloud
 
 RUN apt-get update
 
