@@ -1,4 +1,4 @@
-FROM linkworld/python2_pyv8
+FROM linkworld/python2_pyv8:v1
 
 MAINTAINER linkworld/python2_jambu_cloud
 
